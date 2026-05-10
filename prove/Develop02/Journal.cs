@@ -19,6 +19,7 @@ public class Journal
 
     public void SaveToFile(string file)
     {
+        // "using" ensures the file is closed properly
         using (StreamWriter outputFile = new StreamWriter(file))
         {
             foreach (Entry entry in _entries)

@@ -2,6 +2,7 @@ using System.Collections.Generic;
 
 public class PromptQuestion
 {
+    // List to hold the 5 required prompts
     public List<string> _prompts = new List<string>
     {
         "Who was the most interesting person I interacted with today?",
@@ -13,6 +14,7 @@ public class PromptQuestion
 
     public string GetRandomQuestion()
     {
+        // will randomly pick an index based on the number of items in the list
         Random random = new Random();
         int index = random.Next(_prompts.Count);
         return _prompts[index];
