@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-public class PromptQuestion
+public class PromptGenerator
 {
     // List to hold the 5 required prompts
     public List<string> _prompts = new List<string>
@@ -12,7 +12,7 @@ public class PromptQuestion
         "If I had one thing I could do over today, what would it be?"
     };
 
-    public string GetRandomQuestion()
+    public string GetRandomPrompt()
     {
         // will randomly pick an index based on the number of items in the list
         Random random = new Random();

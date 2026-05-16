@@ -5,7 +5,7 @@ class Program
     static void Main(string[] args)
     {
         Journal theJournal = new Journal();
-        PromptQuestion promptQuestion = new PromptQuestion();
+        PromptGenerator promptGen = new PromptGenerator();
         string choice = "";
 
         // loop until option 5 is chosen
@@ -17,9 +17,9 @@ class Program
             Console.Write("What would you like to do?");
             choice = Console.ReadLine();
 
-            if (choice == "1")
+            if (choice == "1") // write
             {
-                string prompt = promptQuestion.GetRandomQuestion();
+                string prompt = promptGen.GetRandomPrompt();
                 Console.WriteLine(prompt);
                 Console.Write("> ");
                 string response = Console.ReadLine();
