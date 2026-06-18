@@ -48,7 +48,7 @@ class Program
             if (running)
             {
                 Console.WriteLine();
-                Console.WriteLine("Press Enter to continue...");
+                Console.WriteLine("Press Enter to continue..");
                 Console.ReadLine();
             }
         }

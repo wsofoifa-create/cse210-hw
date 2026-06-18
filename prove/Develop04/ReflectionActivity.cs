@@ -14,11 +14,12 @@ public class ReflectionActivity : Activity
     private List<string> _questions = new List<string>()
     {
         "Why was this experience meaningful to you?",
-        "What did you learn about yourself?",
+        "What did you learn about yourself through this experience?",
         "How did you feel when it was complete?",
-        "What made this time different than other times?",
+        "What made this time different than other times when you were not as successful?",
         "What is your favorite thing about this experience?",
-        "How can you apply what you learned to other situations?"
+        "Have you ever done anything like this before?",
+        "How can you keep this experience in mind in the future"
     };
 
     private Random _random = new Random();
@@ -26,7 +27,7 @@ public class ReflectionActivity : Activity
     public ReflectionActivity()
         : base(
             "Reflection",
-            "This activity will help you reflect on times in your life when you have shown strength and resilience.")
+            "This activity will help you reflect on times in your life when you have shown strength and resilience. This will help you recognize the power you have and how you can use it in other aspects of life.")
     {
     }
 

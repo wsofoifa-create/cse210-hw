@@ -6,10 +6,10 @@ public class ListingActivity : Activity
     private List<string> _prompts = new List<string>()
     {
         "Who are people that you appreciate?",
-        "What are your personal strengths?",
+        "What are personal strengths of yours?",
         "Who have you helped recently?",
         "What are you grateful for today?",
-        "Who are some of your heroes?"
+        "Who are some of your personal heroes?"
     };
 
     private Random _random = new Random();
@@ -17,7 +17,7 @@ public class ListingActivity : Activity
     public ListingActivity()
         : base(
             "Listing",
-            "This activity will help you reflect on the good things in your life by having you list as many things as you can.")
+            "This activity will help you reflect on the good things in your life by having you list as many things as you can in a certain area.")
     {
     }
 
