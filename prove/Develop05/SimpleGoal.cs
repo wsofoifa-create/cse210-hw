@@ -43,7 +43,7 @@ public class SimpleGoal : Goal
         return _isComplete ? "[X]" : "[ ]";
     }
 
-    // Convert the goal to a string to use for saving
+    // Will Convert the goal to a string to use for saving
     public override string GetStringRepresentation()
     {
         return $"SimpleGoal:{_name},{_description},{_points},{_isComplete}";
